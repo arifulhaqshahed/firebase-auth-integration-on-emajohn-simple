@@ -9,23 +9,16 @@ import {
 import initializeAuthentication from "../Firebase/firebase.initialize";
 
 initializeAuthentication();
-const googleProvider = new GoogleAuthProvider();
 
 const useFirebase = () => {
   const [user, setUser] = useState({});
   const [error, setError] = useState("");
 
   const auth = getAuth();
+  const googleProvider = new GoogleAuthProvider();
 
   const googleSignIn = () => {
-    signInWithPopup(auth, googleProvider)
-      .then((result) => {
-        console.log(result.user);
-        setUser(result.user);
-      })
-      .catch((error) => {
-        setError(error);
-      });
+    return signInWithPopup(auth, googleProvider);
   };
 
   //observe wheather user auth state changed or not. observer hook.
