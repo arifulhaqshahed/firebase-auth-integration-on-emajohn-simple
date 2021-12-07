@@ -18,3 +18,17 @@
 .header nav a:hover{
     background-color: lightgray;
 }
+.photo img{
+    position: absolute;
+    width: 35px;
+    border-radius: 50%;
+}
+.logout-btn{
+    font-weight: 800;
+    margin-right: 8px;
+    padding: 4px;
+    border: 2px solid rgb(224, 213, 205);
+    border-radius: 15px;
+    color: whitesmoke;
+    background-color: transparent;
+}

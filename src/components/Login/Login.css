@@ -1,0 +1,9 @@
+.login-form{
+    width: 25%;
+    padding: 40px;
+    margin: 30px auto;
+    border: 2px solid steelblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
